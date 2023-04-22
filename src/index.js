@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './component/App/App';
 import reportWebVitals from './reportWebVitals';
+import FavoriteColor from './component/Hook/FavoriteColor';
+import Car from './component/Hook/Car'
+import Car1 from './component/Hook/Car1';
+import Vidu from './component/Hook/Vidu';
+import Showimage from './component/Hook/Showimage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Car></Car>
+    <Car1></Car1>
+    <Vidu></Vidu>
+    <FavoriteColor></FavoriteColor>
+    <Showimage></Showimage>
   </React.StrictMode>
 );
 
