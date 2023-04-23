@@ -27,7 +27,7 @@ class Score extends Component {
     };
     handleSubmit=(event)=>{
         event.preventDefault();
-        alert("ban la hoc sinh " + this.state.xl);
+        alert("ban la hoc sinh : " + this.state.xl);
 
     };
     setResult=()=>{
@@ -50,7 +50,7 @@ class Score extends Component {
                 <h3 className='text-center'>ket qua hoc tap</h3>
                 <form onSubmit={this.handleSubmit} className='was-validated'>
                     <div className='form-group'>
-                        <label htmlFor='hk1'>diem hk1</label>
+                        <label htmlFor='hk1'>diem hk1: </label>
                         <input
                         type='number'
                         className='form-control'
@@ -62,10 +62,11 @@ class Score extends Component {
                         required 
                         onChange={this.handleChange}
                         />
-                        <div className='invalid-feedback'>diem khong hop le</div>
+                        {/* <div className='invalid-feedback'>diem khong hop le</div> */}
                     </div>
+                    <br></br>
                     <div className='form-group'>
-                        <label htmlFor='hk2'>diem hk2:</label>
+                        <label htmlFor='hk2'>diem hk2: </label>
                         <input
                         type='number'
                         className='form-control'
@@ -77,10 +78,11 @@ class Score extends Component {
                         required 
                         onChange={this.handleChange}
                         />
-                        <div className='invalid-feedback'>diem khong hop le</div>
+                        {/* <div className='invalid-feedback'>diem khong hop le</div> */}
                     </div>
+                    <br></br>
                     <div className='form-group'>
-                        <label htmlFor='hk2'>diem trung binh</label>
+                        <label htmlFor='hk2'>diem trung binh: </label>
                         <input
                         type='number'
                         className='form-control'
@@ -88,8 +90,9 @@ class Score extends Component {
                        value={this.state.avg}
                         />
                     </div>
+                    <br></br>
                     <div className='form-group'>
-                        <label htmlFor='hk2'>ket qua</label>
+                        <label htmlFor='hk2'>ket qua: </label>
                         <input
                         type='text'
                         className='form-control'
@@ -98,8 +101,9 @@ class Score extends Component {
                         value={this.state.result}
                         />
                     </div>
+                    <br></br>
                     <div className='form-group'>
-                        <label htmlFor='hk2'>xep loai</label>
+                        <label htmlFor='hk2'>xep loai: </label>
                         <input
                         type='text'
                         className='form-control'
@@ -108,6 +112,7 @@ class Score extends Component {
                         value={this.state.xl}
                         />
                     </div>
+                    <br></br>
                     <button type='submit' value='Submit' className='btn btn-primary'>xem ket qua</button>
                 </form>
             </div>
