@@ -8,16 +8,23 @@ import Car from './component/Hook/Car'
 import Car1 from './component/Hook/Car1';
 import Vidu from './component/Hook/Vidu';
 import Showimage from './component/Hook/Showimage';
+import ActionButton from './component/Form/ActionButton';
+import Score from './component/Form/Score';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Car></Car>
+    {/* <Car></Car>
     <Car1></Car1>
     <Vidu></Vidu>
     <FavoriteColor></FavoriteColor>
     <Showimage></Showimage>
+    
+    <ActionButton></ActionButton> */}
+    <Score></Score>
   </React.StrictMode>
 );
 
