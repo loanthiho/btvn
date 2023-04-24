@@ -47,7 +47,7 @@ class Score extends Component {
     render() {
         return (
             <div className='container'>
-                <h3 className='text-center'>ket qua hoc tap</h3>
+                <h3 className="text-center">ket qua hoc tap</h3>
                 <form onSubmit={this.handleSubmit} className='was-validated'>
                     <div className='form-group'>
                         <label htmlFor='hk1'>diem hk1: </label>
